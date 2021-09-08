@@ -276,7 +276,7 @@ export default {
                     password: _this.password
                 };
                 _this.$axios
-                    .post('http://10.69.48.10:3000/api/user/login', data)
+                    .post('http://localhost:3000/api/user/login', data)
                     .then((res) => {
                         console.log(res.data);
                         //ajax返回

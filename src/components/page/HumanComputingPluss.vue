@@ -254,21 +254,21 @@ export default {
         let _this = this;
         // 调用时机根据需求
         setInterval(function () {
-            _this.$axios.get('http://10.69.48.10:8005/getnum').then((res) => {
+            _this.$axios.get('http://localhost:8005/getnum').then((res) => {
                 console.log(res.data);
                 _this.taskNumber = res.data;
             });
-            _this.$axios.get('http://10.69.48.10:8005/getfinishtasknum').then((res) => {
+            _this.$axios.get('http://localhost:8005/getfinishtasknum').then((res) => {
                 console.log(res.data);
                 _this.completeTaskNum = res.data;
             });
-            _this.$axios.get('http://10.69.48.10:8005/getstatus').then((res) => {
+            _this.$axios.get('http://localhost:8005/getstatus').then((res) => {
                 console.log(res.data);
                 _this.ModelHasDone = res.data;
             });
         }, 1000);
                 let queryurl = JSON.parse(decodeURIComponent(this.$route.params.queryurl));
-        this.$axios.post('http://10.69.48.10:2333/download/getquery', queryurl).then((res) => {
+        this.$axios.post('http://localhost:2333/download/getquery', queryurl).then((res) => {
             if (res.data.code == 200) {
                 this.query = res.data.queryUrl;
             } else {
@@ -276,7 +276,7 @@ export default {
             }
         });
         let data = {};
-        this.$axios.post('http://10.69.48.10:2333/download/single', data).then((res) => {
+        this.$axios.post('http://localhost:2333/download/single', data).then((res) => {
             if (res.data.code == 200) {
                 this.person1 = res.data.url;
             } else {
@@ -289,12 +289,12 @@ export default {
             let label = {
                 label: _this.label
             };
-            _this.$axios.post('http://10.69.48.10:2333/submitlabel', label).then((Res) => {
+            _this.$axios.post('http://localhost:2333/submitlabel', label).then((Res) => {
                 ///任务数量减一
-                _this.$axios.get('http://10.69.48.10:8005/feedback')
+                _this.$axios.get('http://localhost:8005/feedback')
                    alert("submit successfully!!!")
                 //取下一张照片并渲染
-                _this.$axios.post('http://10.69.48.10:2333/download/single', data).then((res) => {
+                _this.$axios.post('http://localhost:2333/download/single', data).then((res) => {
                     if (res.data.code == 200) {
                         _this.person2 = res.data.url;
                         var prependList = function () {

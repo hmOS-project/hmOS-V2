@@ -197,7 +197,7 @@ export default {
     },
     methods: {
         getTaskList() {
-            this.$axios.get('http://10.69.48.10:3000/api/task/getalltask').then((res) => {
+            this.$axios.get('http://localhost:3000/api/task/getalltask').then((res) => {
                 if (res.data.success == 1) {
                     console.log(res.data.Tasklist);
                     this.taskList = res.data.Tasklist;
@@ -225,7 +225,7 @@ export default {
                 let data = {
                     taskType: val
                 };
-                this.$axios.post('http://10.69.48.10:3000/api/task/searchbytype', data).then((res) => {
+                this.$axios.post('http://localhost:3000/api/task/searchbytype', data).then((res) => {
                     if (res.data.success == 1) {
                         this.taskList = res.data.list;
                         console.log(res.data.list);
@@ -245,7 +245,7 @@ export default {
                 let data = {
                     taskStatus: val
                 };
-                this.$axios.post('http://10.69.48.10:3000/api/task/searchbystate', data).then((res) => {
+                this.$axios.post('http://localhost:3000/api/task/searchbystate', data).then((res) => {
                     if (res.data.success == 1) {
                         this.taskList = res.data.list;
                         console.log(res.data.list);
@@ -261,7 +261,7 @@ export default {
             let data = {
                 startTime: date
             };
-            this.$axios.post('http://10.69.48.10:3000/api/task/searchbydate', data).then((res) => {
+            this.$axios.post('http://localhost:3000/api/task/searchbydate', data).then((res) => {
                 if (res.data.success == 1) {
                     this.taskList = res.data.list;
                     console.log(res.data.list);
@@ -275,7 +275,7 @@ export default {
             let data = {
                 description: document.getElementById('inputDescription').value
             };
-            this.$axios.post('http://10.69.48.10:3000/api/task/searchbydescription', data).then((res) => {
+            this.$axios.post('http://localhost:3000/api/task/searchbydescription', data).then((res) => {
                 if (res.data.success == 1) {
                     this.taskList = res.data.list;
                     console.log(res.data.list);

@@ -322,7 +322,7 @@ export default {
                         videoUrl: '',
                         resultUrl: ''
                     };
-                    this.$axios.post('http://10.69.48.10:3000/api/task/createtask', data).then((res) => {
+                    this.$axios.post('http://localhost:3000/api/task/createtask', data).then((res) => {
                         if (res.data.success) {
                             this.taskId = res.data.taskId;
                             this.$message({
@@ -351,7 +351,7 @@ export default {
             } else {
                 formData.append('file', file, this.taskId + '-' + file.name);
                 this.$axios
-                    .post('http://10.69.48.10:2333/upload/single', formData, {
+                    .post('http://localhost:2333/upload/single', formData, {
                         headers: {
                             'Content-Type': 'multipart/form-data'
                         }
@@ -362,7 +362,7 @@ export default {
                                 queryUrl: res.data.originalname,
                                 taskId: this.taskId
                             };
-                            this.$axios.post('http://10.69.48.10:3000/api/task/queryUrl', data).then((res) => {
+                            this.$axios.post('http://localhost:3000/api/task/queryUrl', data).then((res) => {
                                 if (res.data.success) {
                                     this.$message({
                                         type: 'success',
@@ -461,7 +461,7 @@ export default {
                                 videoUrl: temp[1],
                                 taskId: that.taskId
                             };
-                            that.$axios.post('http://10.69.48.10:3000/api/task/videoUrl', data).then((res) => {
+                            that.$axios.post('http://localhost:3000/api/task/videoUrl', data).then((res) => {
                                 if (res.data.success) {
                                     that.$message({
                                         type: 'success',

@@ -276,7 +276,7 @@ export default {
     },
     mounted() {
         let url = JSON.parse(decodeURIComponent(this.$route.params.resulturl));
-             this.$axios.post('http://10.69.48.10:2333/download/getResult', url).then((res) => {
+             this.$axios.post('http://localhost:2333/download/getResult', url).then((res) => {
                 if (res.data.code == 200) {
                 this.$refs.video.src = res.data.resulturl;
                 this.resulturl = res.data.resulturl;
@@ -285,7 +285,7 @@ export default {
                  alert('Network is wrong！');
              }
          });
-          this.$axios.post('http://10.69.48.10:3000/api/task/searchbyid', url).then((res) => {
+          this.$axios.post('http://localhost:3000/api/task/searchbyid', url).then((res) => {
                 if (res.data.success == 1) {
                     this.starttime=res.data.list[0].startTime;
                     this.endtime=res.data.list[0].endTime;

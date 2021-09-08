@@ -368,7 +368,7 @@ export default {
                         label_num:num,
                         label:this.dynamicTags
                     };
-                    this.$axios.post('http://10.69.48.10:3000/api/cla_task/createtask', data).then((res) => {
+                    this.$axios.post('http://localhost:3000/api/cla_task/createtask', data).then((res) => {
                         if (res.data.success) {
                             this.taskId = res.data.taskId;
                             this.$message({
