@@ -111,6 +111,7 @@
 <script>
 import TaskBox from '../common/TaskBox.vue';
 import '@/assets/css/Datacages_Homeindex.css';
+import '@/assets/js/jwt-decode.js';
 export default {
     name: 'dashboard',
     data: function () {
@@ -193,13 +194,19 @@ export default {
         TaskBox
     },
     created: function () {
-        this.getTaskList();
+        var token = localStorage.Authorization;
+        var decode = jwt_decode(token);
+        var userId = decode.id;
+        this.getMyTaskList(userId);
     },
     methods: {
-        getTaskList() {
-            this.$axios.get('http://localhost:3000/api/task/getalltask').then((res) => {
+        getMyTaskList(userId) {
+            let data = {
+                id: userId
+            };
+            console.log(data);
+            this.$axios.post('http://localhost:3000/api/task/getmytask', data).then((res) => {
                 if (res.data.success == 1) {
-                    console.log(res.data.Tasklist);
                     this.taskList = res.data.Tasklist;
                 } else {
                     console.log('请求数据失败！');
@@ -221,14 +228,12 @@ export default {
             if (val == 'All Tasks') {
                 this.getTaskList();
             } else {
-                console.log(val);
                 let data = {
                     taskType: val
                 };
                 this.$axios.post('http://localhost:3000/api/task/searchbytype', data).then((res) => {
                     if (res.data.success == 1) {
                         this.taskList = res.data.list;
-                        console.log(res.data.list);
                     } else {
                         console.log('请求数据失败！');
                     }
@@ -236,19 +241,16 @@ export default {
             }
         },
         searchByTaskState(val) {
-            console.log(val);
             this.resetSelect();
             if (val == 'All') {
                 this.getTaskList();
             } else {
-                console.log(val);
                 let data = {
                     taskStatus: val
                 };
                 this.$axios.post('http://localhost:3000/api/task/searchbystate', data).then((res) => {
                     if (res.data.success == 1) {
                         this.taskList = res.data.list;
-                        console.log(res.data.list);
                     } else {
                         console.log('请求数据失败！');
                     }
@@ -264,7 +266,6 @@ export default {
             this.$axios.post('http://localhost:3000/api/task/searchbydate', data).then((res) => {
                 if (res.data.success == 1) {
                     this.taskList = res.data.list;
-                    console.log(res.data.list);
                 } else {
                     console.log('请求数据失败！');
                 }
@@ -278,7 +279,6 @@ export default {
             this.$axios.post('http://localhost:3000/api/task/searchbydescription', data).then((res) => {
                 if (res.data.success == 1) {
                     this.taskList = res.data.list;
-                    console.log(res.data.list);
                 } else {
                     console.log('请求数据失败！');
                 }

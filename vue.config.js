@@ -1,32 +1,39 @@
 const webpack = require("webpack");
+// module.exports = {
+//     // baseUrl: './',
+//     assetsDir: 'static',
+//     productionSourceMap: false,
+//     configureWebpack: {
+//         plugins: [
+//             new webpack.ProvidePlugin({
+//                 $: "jquery",
+//                 jQuery: "jquery",
+//                 jquery: "jquery",
+//                 "window.jQuery": "jquery"
+//             })
+//         ]
+//     },
+// }
 module.exports = {
-    // baseUrl: './',
     assetsDir: 'static',
     productionSourceMap: false,
-    configureWebpack: {
-        plugins: [
-            new webpack.ProvidePlugin({
-                $: "jquery",
-                jQuery: "jquery",
-                jquery: "jquery",
-                "window.jQuery": "jquery"
-            })
-        ]
+    configureWebpack: (config) => {
+        Object.assign(config, {
+            plugins: [
+                ...config.plugins,
+                new webpack.ProvidePlugin({
+                    jQuery: "jquery",
+                    $: "jquery",
+                    "windows.jQuery": "jquery"
+                })
+            ]
+        });
+        config.module.rules.push({
+            test: /\.(html)$/,
+            exclude: /(node_modules)/,
+            use: [{
+                loader: 'html-loader', // 解决ivew组件 忽略前缀i的问题
+            }]
+        })
     },
-
-    // devServer: {
-    //     host: 'localhost', // 本地主机
-    //     port: 8081, // 端口号的配置
-    //     https: false,
-    //     proxy: { //配置跨域
-    //         '/api': {
-    //             target: 'http://localhost:3000/',
-    //             changeOrigin: true, //允许跨域
-    //             ws: true,
-    //             // pathRewrite: {
-    //             //     '/api': ''
-    //             // }
-    //         }
-    //     }
-    // }
 }

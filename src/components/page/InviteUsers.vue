@@ -28,7 +28,7 @@
                 <el-col :span="8" style="width:960px">
                     <el-card :body-style="{ padding: '0px' }" shadow="hover" style="height: 450px; background-color: rgba(3, 26, 37, 0.4); border: 0px">
                         <div class="header-box2">Invite Members to your Team</div>
-                        <el-row :gutter="0" style="width:900px; height: 50px; margin: auto">
+                        <el-row :gutter="0" style="width:700px; height: 50px; margin: auto">
                             <el-col :span="12">
                                 <span class="title-text" style="margin-left:20px">Email Address</span>
                             </el-col>
@@ -38,10 +38,10 @@
                         </el-row>
                             <el-row :gutter="0" style="width:900px; height: 50px; margin: auto">
                                 <el-col :span="12">
-                                    <input type="text" placeholder= "Eg.xxxx@mail.nwpu.edu.cn"class="input1"  id="input2" v-model="input2" autocomplete="off" style="width:400px;margin-left:20px; margin-top:-20px">
+                                    <input type="text" placeholder= "Eg.xxxx@mail.nwpu.edu.cn" class="input1"  id="input2" v-model="input2" autocomplete="off" style="width:400px;margin-left:20px; margin-top:-20px">
                                 </el-col>
                                 <el-col :span="12">
-                                    <input type="text" placeholder= "Eg.hmOS"class="input1"  id="input2" v-model="input2" autocomplete="off" style="width:400px; margin-top:-20px">
+                                    <input type="text" placeholder= "Eg.hmOS" class="input1"  id="input2" v-model="input2" autocomplete="off" style="width:400px; margin-top:-20px">
                                 </el-col>
                             </el-row>
                             <el-row :gutter="0" style="width:900px; height: 50px; margin: auto">

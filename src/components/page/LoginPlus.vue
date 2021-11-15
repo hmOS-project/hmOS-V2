@@ -27,9 +27,9 @@
             <div class="login_fields">
                 <div class="login_fields__user">
                     <div class="icon" style="opacity: 0.5">
-                        <img alt="" src="@/assets/img/user_icon_copy.png" />
+                        <img alt="" src="@/assets/img/email_icon.png" />
                     </div>
-                    <input name="login" placeholder="Username" v-model="username" maxlength="16" type="text" autocomplete="off" />
+                    <input name="login" placeholder="Email" v-model="email" maxlength="20" type="text" autocomplete="off" />
                     <div class="validation">
                         <img alt="" src="@/assets/img/tick.png" />
                     </div>
@@ -90,7 +90,7 @@ import '@/assets/js/jquery.mockjax.js.下载';
 export default {
     data: function () {
         return {
-            username: '',
+            email: '',
             password: '',
             CodeVal: ''
         };
@@ -220,7 +220,7 @@ export default {
             var pwd = $('input[name="pwd"]').val();
             var code = $('input[name="code"]').val();
             if (login == '') {
-                alert('Please input your username!');
+                alert('Please input your email!');
             } else if (pwd == '') {
                 alert('Please input your password!');
             } else if (code == '') {
@@ -272,7 +272,7 @@ export default {
                         .addClass('visible');
                 }, 1000);
                 let data = {
-                    username: _this.username,
+                    email: _this.email,
                     password: _this.password
                 };
                 _this.$axios
@@ -312,7 +312,7 @@ export default {
                                 _this.$router.push('/homeplus');
                                 //跳转操作
                             } else {
-                                alert('Username or password is wrong');
+                                alert('Email or password is wrong');
                             }
                         }, 2400);
                     })
@@ -740,5 +740,19 @@ main .loaders .loader {
     padding: 3px;
     z-index: 0;
     color: #fff;
+}
+.login_fields__register input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.login_fields__register input:hover {
+    color: white;
+    background: #4fa1d9;
+    cursor: pointer;
+    -webkit-transition-property: background, color;
+    transition-property: background, color;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 </style>

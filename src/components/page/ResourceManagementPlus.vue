@@ -102,7 +102,7 @@
         </el-row>
 
         <div class="copyrigntoutbox">
-            <span class="copyrigntmsg">Copyright © 2020 Northwestern Polytechnical University All Rights Reserved</span>
+            <span class="copyrigntmsg">Copyright © 2021 Northwestern Polytechnical University All Rights Reserved</span>
         </div>
     </div>
 </template>

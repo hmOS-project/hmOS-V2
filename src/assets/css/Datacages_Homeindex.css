@@ -5,7 +5,7 @@ body {
     margin: 0;
     font-family: "Microsoft YaHei";
     font-weight: lighter;
-    background-image: url("../../assets/img/Homebodybg1.jpg");
+    background-image: url("../../assets/img/bg_new2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: -120px;
@@ -60,8 +60,8 @@ img {
 }
 
 .circleeffectclass {
-    border-radius: 50%;
-    border: rgba(0, 168, 255, 0.6) 1px solid;
+    border-radius: 80%;
+    border: rgba(0, 168, 255, 0.6) 6px solid;
     cursor: pointer;
     position: absolute;
 }
@@ -90,9 +90,9 @@ img {
 }
 
 .stagetitle {
-    color: #00e4ff;
+    color: rgb(255, 255, 255);
     top: 104px;
-    font-size: 14px;
+    font-size: 20px;
     font-family: "Microsoft YaHei";
     font-weight: 700;
     display: block;
@@ -283,13 +283,13 @@ img {
 /*卫星动效*/
 
 .aroundfunctioneffect {
-    width: 76px;
-    height: 76px;
+    width: 90px;
+    height: 90px;
 }
 
 .acrossremindeffectoutard {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     margin: 8px;
 }
 
@@ -305,6 +305,8 @@ img {
 
 .arounddataeffect02 {
     animation: scrolleffectarround01 linear infinite 3.8s forwards;
+    width: 80px;
+    height: 80px;
 }
 
 .arounddataeffect03 {
@@ -391,7 +393,7 @@ img {
 
 .analyzedatashowtitle {
     line-height: 44px;
-    color: #dfdede;
+    color: #ffffff;
     font-size: 14px;
     margin-left: 12px;
     font-weight: bold
@@ -511,6 +513,7 @@ img {
 
 .copyrigntmsg {
     display: block;
-    color: white;
-    font-size: 12px;
+    color: rgb(10, 3, 3);
+    font-size: 14px;
+    font-weight: 500;
 }

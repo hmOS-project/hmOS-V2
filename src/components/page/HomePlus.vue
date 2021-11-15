@@ -16,7 +16,7 @@
             <el-card
                 :body-style="{ padding: '0px' }"
                 shadow="hover"
-                style="height: 600px; padding: 5px; background-color: rgba(50,26, 50, 0.5); border: 0"
+                style="height: 600px; padding: 5px; background-color: rgba(5, 53, 77, 0.8); border: 0"
             >
                 <div class="clearfix">
                     <img src="../../assets/img/external_collect.png" class="user-avator" alt />
@@ -35,16 +35,16 @@
                 <div class="func-list">
                     <div class="func-list-box">
                         <div class="circleeffectclass aroundfunctioneffect" @click="tasktype()">
-                            <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
-                            <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
+                            <!-- <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" /> -->
+                             <!-- <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
                                 <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                            </div>
-                            <div style="padding: 18px">
+                            </div>  -->
+                            <div style="padding: 11px">
                                 <img
                                     class="effectposition acrossremindeffecindex"
                                     src="@/assets/img/createtask.png"
-                                    width="38px"
-                                    height="38px"
+                                    width="55px"
+                                    height="55px"
                                 />
                             </div>
                             <span class="stagetitle stagearoundtitle">Create Task</span>
@@ -52,16 +52,16 @@
                     </div>
                     <div class="func-list-box">
                         <div class="circleeffectclass aroundfunctioneffect" @click="taskview()">
-                            <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
+                            <!-- <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
                             <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
                                 <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                            </div>
-                            <div style="padding: 18px">
+                            </div> -->
+                            <div style="padding: 11px">
                                 <img
                                     class="effectposition acrossremindeffecindex"
                                     src="@/assets/img/taskview.png"
-                                    width="38px"
-                                    height="38px"
+                                    width="55px"
+                                    height="55px"
                                 />
                             </div>
                             <span class="stagetitle stagearoundtitle">Task View</span>
@@ -69,16 +69,16 @@
                     </div>
                     <div class="func-list-box">
                         <div class="circleeffectclass aroundfunctioneffect" @click="mytask()">
-                            <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
+                            <!-- <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
                             <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
                                 <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                            </div>
-                            <div style="padding: 18px">
+                            </div> -->
+                            <div style="padding: 11px">
                                 <img
                                     class="effectposition acrossremindeffecindex"
                                     src="@/assets/img/mytasks.png"
-                                    width="38px"
-                                    height="38px"
+                                    width="55px"
+                                    height="55px"
                                 />
                             </div>
                             <span class="stagetitle stagearoundtitle">My Task</span>
@@ -86,16 +86,16 @@
                     </div>
                     <div class="func-list-box">
                         <div class="circleeffectclass aroundfunctioneffect" @click="tasklist()">
-                            <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
+                            <!-- <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
                             <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
                                 <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                            </div>
-                            <div style="padding: 18px">
+                            </div> -->
+                            <div style="padding: 11px">
                                 <img
                                     class="effectposition acrossremindeffecindex"
                                     src="@/assets/img/mylist.png"
-                                    width="38px"
-                                    height="38px"
+                                    width="55px"
+                                    height="55px"
                                 />
                             </div>
                             <span class="stagetitle stagearoundtitle">Task List</span>
@@ -104,33 +104,33 @@
 
                     <div class="func-list-box">
                         <div class="circleeffectclass aroundfunctioneffect">
-                            <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
+                            <!-- <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
                             <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
                                 <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                            </div>
-                            <div style="padding: 18px">
+                            </div> -->
+                            <div style="padding: 11px">
                                 <img
                                     class="effectposition acrossremindeffecindex"
                                     src="@/assets/img/Settings.png"
-                                    width="38px"
-                                    height="38px"
+                                    width="55px"
+                                    height="55px"
                                 />
                             </div>
                             <span class="stagetitle stagearoundtitle">Settings</span>
                         </div>
                     </div>
                     <div class="func-list-box">
-                        <div class="circleeffectclass aroundfunctioneffect"  @click="maintenance()">
-                            <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
+                        <div class="circleeffectclass aroundfunctioneffect" @click="maintenance()">
+                            <!-- <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
                             <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
                                 <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                            </div>
-                            <div style="padding: 18px">
+                            </div> -->
+                            <div style="padding: 11px">
                                 <img
                                     class="effectposition acrossremindeffecindex"
                                     src="@/assets/img/Maintenance.png"
-                                    width="38px"
-                                    height="38px"
+                                    width="55px"
+                                    height="55px"
                                 />
                             </div>
                             <span class="stagetitle stagearoundtitle">Maintenance</span>
@@ -138,50 +138,50 @@
                     </div>
                     <div class="func-list-box">
                         <div class="circleeffectclass aroundfunctioneffect" @click="inviteusers()">
-                            <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
+                            <!-- <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
                             <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
                                 <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                            </div>
-                            <div style="padding: 18px">
+                            </div> -->
+                            <div style="padding: 11px">
                                 <img
                                     class="effectposition acrossremindeffecindex"
                                     src="@/assets/img/inviteuser.png"
-                                    width="38px"
-                                    height="38px"
+                                    width="55px"
+                                    height="55px"
                                 />
                             </div>
                             <span class="stagetitle stagearoundtitle">User Invitation</span>
                         </div>
                     </div>
                     <div class="func-list-box">
-                        <div class="circleeffectclass aroundfunctioneffect" >
-                            <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
+                        <div class="circleeffectclass aroundfunctioneffect">
+                            <!-- <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
                             <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
                                 <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                            </div>
-                            <div style="padding: 18px">
+                            </div> -->
+                            <div style="padding: 11px">
                                 <img
                                     class="effectposition acrossremindeffecindex"
                                     src="@/assets/img/Application.png"
-                                    width="38px"
-                                    height="38px"
+                                    width="55px"
+                                    height="55px"
                                 />
                             </div>
                             <span class="stagetitle stagearoundtitle">Application</span>
                         </div>
                     </div>
                     <div class="func-list-box">
-                        <div class="circleeffectclass aroundfunctioneffect"@click="crowdsourcingaccess()">
-                            <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
+                        <div class="circleeffectclass aroundfunctioneffect" @click="crowdsourcingaccess()">
+                            <!-- <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
                             <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
                                 <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                            </div>
-                            <div style="padding: 18px">
+                            </div> -->
+                            <div style="padding: 11px">
                                 <img
                                     class="effectposition acrossremindeffecindex"
                                     src="@/assets/img/Crowdsourcing.png"
-                                    width="38px"
-                                    height="38px"
+                                    width="55px"
+                                    height="55px"
                                 />
                             </div>
                             <span class="stagetitle stagearoundtitle">Crowdsourcing Access</span>
@@ -189,16 +189,16 @@
                     </div>
                     <div class="func-list-box">
                         <div class="circleeffectclass aroundfunctioneffect" @click="resourcemanagement()">
-                            <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
+                            <!-- <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
                             <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
                                 <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                            </div>
-                            <div style="padding: 18px">
+                            </div> -->
+                            <div style="padding: 11px">
                                 <img
                                     class="effectposition acrossremindeffecindex"
                                     src="@/assets/img/Management.png"
-                                    width="38px"
-                                    height="38px"
+                                    width="55px"
+                                    height="55px"
                                 />
                             </div>
                             <span class="stagetitle stagearoundtitle">Resource Management</span>
@@ -207,95 +207,15 @@
                 </div>
             </el-card>
             <div class="copyrigntoutbox">
-                <span class="copyrigntmsg" style="position: relative; top: 10px"
+                <span class="copyrigntmsg" style="position: relative; top: 5px"
                     >Copyright © 2021 Northwestern Polytechnical University All Rights Reserved</span
                 >
             </div>
-            <!-- <div style="width: 1000px; height: 500px; position: relative">
-           <div class="line2 line"></div>
-
-                <div class="line3 line"></div>
-                <div class="line4 line"></div>
-                <div class="line5 line"></div>
-                <div class="line6 line"></div> -->
-            <!--主动效-->
-            <!-- <div class="maineffectoutbox circleeffectclass" @click="gotocreate()">
-                    <img class="effectposition maindataeffect" src="@/assets/img/maindataeffect.png" />
-                    <div class="effectposition acrossremindeffectout" style="width: 76px; height: 76px; margin: 9px">
-                        <div class="acrossremindeffectin" style="width: 68px; height: 68px; margin: 4px"></div>
-                    </div>
-                    <img class="effectposition maindataspecialeffect" src="@/assets/img/maindataspecialeffect.png" /><img
-                        class="effectposition acrossremindeffecindex"
-                        src="@/assets/img/maindataicon.png"
-                    />
-                    <span class="stagetitle">Create Task</span>
-                </div> -->
-            <!--卫星动效-->
-            <!-- <div class="circleeffectclass aroundfunctioneffect" style="left: 254px; top: 135px">
-                    <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
-                    <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
-                        <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                    </div>
-                    <img class="effectposition acrossremindeffecindex" src="@/assets/img/xingzhengshenpi.png" /><span
-                        class="stagetitle stagearoundtitle"
-                        >Task List</span
-                    >
-                </div>
-                <div class="circleeffectclass aroundfunctioneffect" style="left: 189px; bottom: 89px">
-                    <img class="effectposition arounddataeffect01" src="@/assets/img/aroundeffect.png" />
-                    <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
-                        <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                    </div>
-                    <img class="effectposition acrossremindeffecindex" src="@/assets/img/baixingpaiAPP.png" /><span
-                        class="stagetitle stagearoundtitle"
-                        >My List</span
-                    >
-                </div>
-                <div class="circleeffectclass aroundfunctioneffect" style="right: 405px; bottom: 53px">
-                    <img class="effectposition arounddataeffect02" src="@/assets/img/aroundeffect.png" />
-                    <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
-                        <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                    </div>
-                    <img class="effectposition acrossremindeffecindex" src="@/assets/img/zhatuyunshu.png" /><span
-                        class="stagetitle stagearoundtitle"
-                        >Resource Management</span
-                    >
-                </div>
-                <div class="circleeffectclass aroundfunctioneffect" style="right: 243px; bottom: 165px">
-                    <img class="effectposition arounddataeffect01" src="@/assets/img/aroundeffect.png" />
-                    <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
-                        <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                    </div>
-                    <img class="effectposition acrossremindeffecindex" src="@/assets/img/12319rexian.png" /><span
-                        class="stagetitle stagearoundtitle"
-                        >System Maintenance</span
-                    >
-                </div>
-                <div class="circleeffectclass aroundfunctioneffect" style="right: 294px; top: 79px">
-                    <img class="effectposition arounddataeffect03" src="@/assets/img/aroundeffect.png" />
-                    <div class="effectposition acrossremindeffectout acrossremindeffectoutard">
-                        <div class="acrossremindeffectin acrossremindeffectinard"></div>
-                    </div>
-                    <img class="effectposition acrossremindeffecindex" src="@/assets/img/zonghezhifa.png" /><span
-                        class="stagetitle stagearoundtitle"
-                        >Custom Application</span
-                    >
-                </div>
-                <div class="circleeffectclass decarround01" style="top: 218px; left: 92px">
-                    <div class="acrossremindeffectin decarroundin01" style=""></div>
-                </div>
-                <div class="circleeffectclass decarround01" style="top: 197px; right: 163px">
-                    <div class="acrossremindeffectin decarroundin01" style=""></div>
-                </div>
-                <div class="circleeffectclass decarround02" style="top: 99px; right: 93px">
-                    <div class="acrossremindeffectin decarroundin02" style=""></div>
-                </div> 
-            </div>-->
         </div>
 
         <!--侧边浮窗-->
         <div class="fltoutbox leftbox">
-            <div style="height: 90px; padding-top: 35px;"><span class="analyzedatashowtitle">【Personal Information】</span></div>
+            <div style="height: 90px; padding-top: 35px"><span class="analyzedatashowtitle">【Personal Information】</span></div>
             <!--左上分析内容放置框-->
             <div class="analyzemsgbgbox" style="margin-left: 2px; height: 235px">
                 <div style="display: flex; justify-content: space-around">
@@ -303,8 +223,8 @@
                         <img src="../../assets/img/img.jpg" class="user-avator" alt />
                     </div>
                     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
-                        <div style="color: white; font-weight: 500; font-size: 18px; margin-top: 10px">Hmc Group</div>
-                        <div style="color: #aeaeae; font-weight: 400; font-size: 14px">hm@mail.nwpu.edu.cn</div>
+                        <div style="color: white; font-weight: 500; font-size: 18px; margin-top: 10px">{{ currentUsername }}</div>
+                        <div style="color: white; font-weight: 400; font-size: 14px">{{ currentEmail }}</div>
                     </div>
                     <div style="display: flex; justify-content: center; align-items: center">
                         <el-dropdown class="user-name" trigger="click" @command="handleCommand">
@@ -312,54 +232,57 @@
                                 <i class="el-icon-caret-bottom"></i>
                             </span>
                             <el-dropdown-menu slot="dropdown">
-                                <a href="https://github.com/Miraclewyfei/hmOS1.0" target="_blank">
-                                    <el-dropdown-item>My profile</el-dropdown-item>
-                                </a>
-                                <el-dropdown-item divided command="loginout">Log out</el-dropdown-item>
+                                <el-dropdown-item command="profile">My profile</el-dropdown-item>
+                                <el-dropdown-item command="loginout">Log out</el-dropdown-item>
                             </el-dropdown-menu>
                         </el-dropdown>
                     </div>
                 </div>
                 <div>
                     <div style="margin: 18px 0px 4px 12px">
-                        <div class="l_left" style="color: white; font-size: 14px; margin-right: 10px">Credit</div>
+                        <div class="l_left" style="color: white; font-size: 14px; font-weight: 700; margin-right: 10px">Credit</div>
                         <div class="l_left" id="vaderSize0" style="width: 160px; padding: 0; margin-top: 4px"></div>
-                        <div><span class="l_left" style="margin-left: 12px; color: #72ff00; font-size: 12px">80/100</span></div>
+                        <div>
+                            <span class="l_left" style="margin-left: 10px; color: #72ff00; font-size: 12px; font-weight: 500"
+                                >{{ this.Personal_credit }}/100</span
+                            >
+                        </div>
                         <div class="clear" style="margin-bottom: 10px"></div>
-                        <div class="l_left" style="color: white; font-size: 14px; margin-right: 10px">Ability</div>
+                        <div class="l_left" style="color: white; font-size: 14px; font-weight: 700; margin-right: 10px">Ability</div>
                         <div class="l_left" id="vaderSize00" style="width: 160px; padding: 0; margin-top: 4px"></div>
-                        <div><span class="l_left" style="margin-left: 12px; color: #72ff00; font-size: 12px">60/100</span></div>
+                        <div>
+                            <span class="l_left" style="margin-left: 10px; color: #72ff00; font-size: 12px; font-weight: 500"
+                                >{{ this.Personal_ability }}/100</span
+                            >
+                        </div>
                         <div class="clear"></div>
                     </div>
                 </div>
                 <div class="divider div-transparent"></div>
                 <div style="display: flex">
                     <div style="margin: 0 15px">
-                        <div style="color: white">Released</div>
-                        <div style="color: white; text-align: center">10</div>
+                        <div style="color: white; font-size: 14px; font-weight: 500">Unexecuted</div>
+                        <div style="color: white; text-align: center; font-weight: 700">{{ this.Personnal_Unexecuted_task }}</div>
                     </div>
                     <div style="margin: 0 15px">
-                        <div style="color: white">Finished</div>
-                        <div style="color: white; text-align: center">15</div>
+                        <div style="color: white; font-size: 14px; font-weight: 500">Executing</div>
+                        <div style="color: white; text-align: center; font-weight: 700">{{ this.Personnal_Executing_task }}</div>
                     </div>
                     <div style="margin: 0 15px">
-                        <div style="color: white">Executing</div>
-                        <div style="color: white; text-align: center">5</div>
+                        <div style="color: white; font-size: 14px; font-weight: 500">Finished</div>
+                        <div style="color: white; text-align: center; font-weight: 700">{{ this.Personnal_Finished_task }}</div>
                     </div>
                 </div>
             </div>
             <!--左下分析内容放置框-->
             <div class="analyzemsgbgbox" style="margin-top: 20px; height: 350px; overflow: hidden">
-                <span class="analyzedatashowtitle" style="line-height: 66px; margin-left: 20px">【Tasks Completed】</span>
+                <span class="analyzedatashowtitle" style="line-height: 66px; margin-left: 20px">【Current Tasks】</span>
                 <div class="scrollbox">
                     <div id="scrollDiv">
                         <ul style="margin-top: -1.48947px">
-                            <li>Car idea generation task <span style="">3/10</span></li>
-                            <li>Finding Zhang task by the Public Security Department<span style="">3/10</span></li>
-                            <li>Finding Li task by the Public Security Department<span style="">3/10</span></li>
-                            <li>Finding Wang task by the Public Security Department<span style="">3/10</span></li>
-                            <li>Fake news detection task of Public Security Department<span style="">3/10</span></li>
-                            <li>Anomaly detection task of Public Security Department<span style="">3/10</span></li>
+                            <li v-for="task in this.System_taskList" :key="task" style="font-weight: 500">
+                                {{ task.description }}<span style="">Acc:{{ task.taskAccRequire }}%</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -378,53 +301,71 @@
             <div class="analyzemsgbgbox" style="margin-right: 2px; padding-bottom: 29px; height: 250px">
                 <div style="background-color: #022542; opacity: 0.9; height: 130px">
                     <div style="padding: 10px 0 0 16px">
-                        <div class="l_left"><span style="color: #dfdede; font-size: 10px; margin-right: 10px">Crowds：</span></div>
+                        <div class="l_left">
+                            <span style="color: #dfdede; font-size: 10px; margin-right: 10px; font-weight: 700">Crowds：</span>
+                        </div>
                         <div class="l_left" id="vaderSize" style="width: 150px; padding: 0; margin-top: 6px">
                             <span class="barControl" style="width: 30%">
                                 <!-- <div class="barContro_space"><span class="vader" style="height: 8px; overflow: hidden; width: 37.9969%;"
                   id="barvaderSize"></span></div> -->
                             </span>
                         </div>
-                        <div class="l_left"><span style="color: #dd9809; margin-left: 4px; font-size: 10px">743人</span></div>
+                        <div class="l_left">
+                            <span style="color: #dd9809; margin-left: 4px; font-size: 10px; font-weight: 700"
+                                >{{ this.System_position_crowds }}人</span
+                            >
+                        </div>
                         <div class="clear"></div>
                     </div>
                     <div style="padding: 8px 0 0 16px">
-                        <div class="l_left"><span style="color: #dfdede; font-size: 10px; margin-right: 10px">Experts：</span></div>
+                        <div class="l_left">
+                            <span style="color: #dfdede; font-size: 10px; margin-right: 10px; font-weight: 700">Experts：</span>
+                        </div>
                         <div class="l_left" id="vaderSize1" style="width: 150px; margin-top: 6px">
                             <span class="barControl" style="width: 30%">
                                 <!-- <div class="barContro_space1"><span class="vader1" style="height: 8px; overflow: hidden; width: 27.9969%;"
                   id="barvaderSize1"></span></div> -->
                             </span>
                         </div>
-                        <div class="l_left"><span style="color: #00d8ff; margin-left: 4px; font-size: 10px">216人</span></div>
+                        <div class="l_left">
+                            <span style="color: #00d8ff; margin-left: 4px; font-size: 10px">{{ this.System_position_experts }}人</span>
+                        </div>
                         <div class="clear"></div>
                     </div>
                     <div style="padding: 8px 0 0 16px">
-                        <div class="l_left"><span style="color: #dfdede; font-size: 10px; margin-right: 6px">Persons：</span></div>
+                        <div class="l_left">
+                            <span style="color: #dfdede; font-size: 10px; margin-right: 6px; font-weight: 700">Persons：</span>
+                        </div>
                         <div class="l_left" id="vaderSize2" style="width: 150px; margin-top: 6px">
                             <span class="barControl" style="width: 30%">
                                 <!-- <div class="barContro_space2"><span class="vader2" style="height: 8px; overflow: hidden; width: 27.9969%;"
                   id="barvaderSize2"></span></div> -->
                             </span>
                         </div>
-                        <div class="l_left"><span style="color: #56a4ff; margin-left: 4px; font-size: 10px">2037人</span></div>
+                        <div class="l_left">
+                            <span style="color: #56a4ff; margin-left: 4px; font-size: 10px">{{ this.System_position_persons }}人</span>
+                        </div>
                         <div class="clear"></div>
                     </div>
                     <div style="padding: 8px 0 0 16px">
-                        <div class="l_left"><span style="color: #dfdede; font-size: 10px; margin-right: 10px">Others：</span></div>
+                        <div class="l_left">
+                            <span style="color: #dfdede; font-size: 10px; margin-right: 10px; font-weight: 700">Others：</span>
+                        </div>
                         <div class="l_left" id="vaderSize3" style="width: 150px; margin-top: 6px">
                             <span class="barControl" style="width: 30%">
                                 <!-- <div class="barContro_space3"><span class="vader3" style="height: 8px; overflow: hidden; width: 27.9969%;"
                   id="barvaderSize3"></span></div> -->
                             </span>
                         </div>
-                        <div class="l_left"><span style="color: #56ff6a; margin-left: 4px; font-size: 10px">651人</span></div>
+                        <div class="l_left">
+                            <span style="color: #56ff6a; margin-left: 4px; font-size: 10px">{{ this.System_position_others }}人</span>
+                        </div>
                         <div class="clear"></div>
                     </div>
                 </div>
                 <div style="margin-top: 15px">
                     <img src="@/assets/img/GPU.png" style="width: 30px; height: 30px; margin-left: 10px" />
-                    <p style="color: #dfdede; font-size: 14px; margin: -25px 0 0 50px; font-weight: 700">【GPU Unit】</p>
+                    <p style="color: #ffffff; font-size: 14px; margin: -25px 0 0 50px; font-weight: 700">【GPU Unit】</p>
                     <div class="l_left" id="vaderSize4" style="width: 200px; padding: 0; margin: 40px 0 0 18px">
                         <span class="barControl" style="width: 30%">
                             <!-- <div class="barContro_space4"><span class="vader4" style="height: 22px; overflow: hidden; width: 55.9939%;"
@@ -533,21 +474,105 @@ import '@/assets/css/ProgressBarWars.css';
 import '@/assets/js/jquery.min.js.下载';
 import '@/assets/js/echarts-all.js.下载';
 import '@/assets/js/ProgressBarWars.js.下载';
+import '@/assets/js/jwt-decode.js';
 
 export default {
     data: function () {
         return {
-            param: {
-                username: 'admin',
-                password: '123456'
-            }
-            // rules: {
-            //     username: [{ required: true, message: '请输入用户名', trigger: 'blur' }],
-            //     password: [{ required: true, message: '请输入密码', trigger: 'blur' }]
-            // }
+            currentUsername: '',
+            currentEmail: '',
+            Personnal_Unexecuted_task: 0,
+            Personnal_Executing_task: 0,
+            Personnal_Finished_task: 0,
+            Personal_ability: '',
+            Personal_credit: '',
+            System_taskList: [],
+            System_position_crowds: 0,
+            System_position_experts: 0,
+            System_position_persons: 0,
+            System_position_others: 0
         };
     },
+    created: function () {
+        //jwt
+        var token = localStorage.Authorization;
+        var decode = jwt_decode(token);
+
+        //用户信息栏数据请求
+        this.currentUsername = decode.username;
+        this.currentEmail = decode.email;
+        this.Personal_credit = decode.credit;
+        this.Personal_ability = decode.ability;
+        var userId = decode.id;
+        this.getUserTask(userId);
+
+        //系统任务栏数据请求
+        this.getSystemTask();
+
+        //Human Unit栏数据请求
+        this.getSystemUser();
+    },
+
     methods: {
+        getUserTask(userId) {
+            let data = {
+                id: userId
+            };
+            this.$axios.post('http://localhost:3000/api/task/getmytask', data).then((res) => {
+                if (res.data.success == 1) {
+                    let Personnal_taskList = res.data.Tasklist;
+                    Personnal_taskList.forEach((element) => {
+                        switch (element.taskStatus) {
+                            case 'Unexecuted':
+                                this.Personnal_Unexecuted_task++;
+                                break;
+                            case 'Executing':
+                                this.Personnal_Executing_task++;
+                                break;
+                            case 'Finished':
+                                this.Personnal_Finished_task++;
+                                break;
+                        }
+                    });
+                } else {
+                    console.log('请求数据失败！');
+                }
+            });
+        },
+        getSystemTask() {
+            this.$axios.get('http://localhost:3000/api/task/getalltask').then((res) => {
+                if (res.data.success == 1) {
+                    this.System_taskList = res.data.Tasklist;
+                } else {
+                    console.log('请求数据失败！');
+                }
+            });
+        },
+        getSystemUser() {
+            this.$axios.get('http://localhost:3000/api/user/getalluser').then((res) => {
+                if (res.data.success == 1) {
+                    let System_userList = res.data.userList;
+                    System_userList.forEach((user) => {
+                        switch (user.position) {
+                            case 0:
+                                this.System_position_Others++;
+                                break;
+                            case 1:
+                                this.System_position_crowds++;
+                                break;
+                            case 2:
+                                this.System_position_experts++;
+                                break;
+                            case 3:
+                                this.System_position_persons++;
+                                break;
+                        }
+                    });
+                } else {
+                    console.log('请求数据失败！');
+                }
+            });
+        },
         tasktype() {
             this.$router.push('/tasktypeplus');
         },
@@ -563,17 +588,25 @@ export default {
         tasklist() {
             this.$router.push('/tasklistplus');
         },
-        resourcemanagement(){
-            this.$router.push('/resourcemanagementplus')
+        resourcemanagement() {
+            this.$router.push('/resourcemanagementplus');
         },
-        crowdsourcingaccess(){
-            this.$router.push('/crowdsourcingaccess')
+        crowdsourcingaccess() {
+            this.$router.push('/crowdsourcingaccess');
         },
-        inviteusers(){
-            this.$router.push('/inviteusers')
+        inviteusers() {
+            this.$router.push('/inviteusers');
         },
-        maintenance(){
-             this.$router.push('/maintenance')
+        maintenance() {
+            this.$router.push('/maintenance');
+        },
+        handleCommand(command) {
+            if (command == 'loginout') {
+                this.$router.push('/login');
+            }
+            if (command == 'profile') {
+                this.$router.push('/profile');
+            }
         }
     },
     mounted() {
@@ -588,23 +621,22 @@ export default {
             alto: '8px',
             flag: true
         });
-
         $('#vaderSize9').ProgressBarWars9({
-            porcentaje: 83,
+            porcentaje: 50,
             estilo: 'vader9',
             tiempo: 5980,
             alto: '8px',
             flag: true
         });
         $('#vaderSize0').ProgressBarWars9({
-            porcentaje: 80,
+            porcentaje: this.Personal_credit,
             estilo: 'vader9',
             tiempo: 5980,
             alto: '8px',
             flag: true
         });
         $('#vaderSize00').ProgressBarWars9({
-            porcentaje: 60,
+            porcentaje: this.Personal_ability,
             estilo: 'vader9',
             tiempo: 5980,
             alto: '8px',
@@ -638,6 +670,34 @@ export default {
             alto: '8px',
             flag: true
         });
+        $('#vaderSize3').ProgressBarWars3({
+            porcentaje: this.System_position_others,
+            estilo: 'vader3',
+            tiempo: 5980,
+            alto: '8px',
+            flag: true
+        });
+        $('#vaderSize2').ProgressBarWars2({
+            porcentaje: this.System_position_persons + 10,
+            estilo: 'vader2',
+            tiempo: 5980,
+            alto: '8px',
+            flag: true
+        });
+        $('#vaderSize1').ProgressBarWars1({
+            porcentaje: this.System_position_experts,
+            estilo: 'vader1',
+            tiempo: 5980,
+            alto: '8px',
+            flag: true
+        });
+        $('#vaderSize').ProgressBarWars({
+            porcentaje: this.System_position_crowds,
+            estilo: 'vader',
+            tiempo: 5980,
+            alto: '8px',
+            flag: true
+        });
         var number = 60;
         $(function () {
             console.log();
@@ -659,88 +719,10 @@ export default {
                 });
             }, 5000);
         });
-        var number = 90;
-        $(function () {
-            $('#vaderSize3').ProgressBarWars3({
-                porcentaje: 30,
-                estilo: 'vader3',
-                tiempo: 5980,
-                alto: '8px',
-                flag: true
-            });
-            setInterval(function () {
-                number = Math.floor(Math.random() * 99 + 1);
-                $('#vaderSize3').ProgressBarWars3({
-                    porcentaje: number,
-                    estilo: 'vader3',
-                    tiempo: 5980,
-                    alto: '8px',
-                    flag: false
-                });
-            }, 5000);
-        });
-        var number = 60;
-        $(function () {
-            $('#vaderSize2').ProgressBarWars2({
-                porcentaje: 30,
-                estilo: 'vader2',
-                tiempo: 5980,
-                alto: '8px',
-                flag: true
-            });
-            setInterval(function () {
-                number = Math.floor(Math.random() * 99 + 1);
-                $('#vaderSize2').ProgressBarWars2({
-                    porcentaje: 20,
-                    estilo: 'vader2',
-                    tiempo: 5980,
-                    alto: '30px',
-                    flag: false
-                });
-            }, 5000);
-        });
-        $(function () {
-            $('#vaderSize1').ProgressBarWars1({
-                porcentaje: 30,
-                estilo: 'vader1',
-                tiempo: 5980,
-                alto: '8px',
-                flag: true
-            });
-            setInterval(function () {
-                number = Math.floor(Math.random() * 99 + 1);
-                $('#vaderSize1').ProgressBarWars1({
-                    porcentaje: 90,
-                    estilo: 'vader1',
-                    tiempo: 5980,
-                    alto: '30px',
-                    flag: false
-                });
-            }, 5000);
-        });
-        $(function () {
-            $('#vaderSize').ProgressBarWars({
-                porcentaje: 30,
-                estilo: 'vader',
-                tiempo: 5980,
-                alto: '8px',
-                flag: true
-            });
-            setInterval(function () {
-                number = Math.floor(Math.random() * 99 + 1);
-                $('#vaderSize').ProgressBarWars({
-                    porcentaje: 30,
-                    estilo: 'vader',
-                    tiempo: 5980,
-                    alto: '30px',
-                    flag: false
-                });
-            }, 5000);
-        });
         $('#scrollDiv').Scroll({
             line: 1,
             speed: 500,
-            timer: 5000,
+            timer: 3000,
             up: 'but_up',
             down: 'but_down'
         });
@@ -849,9 +831,9 @@ export default {
 }
 
 .down_span {
-    color: #dfdede;
+    color: #faf6f6;
     font-size: 12px;
-    font-weight: lighter;
+    font-weight: 500;
 }
 
 h3,
@@ -1132,8 +1114,8 @@ li {
 .resource-info-cont {
     color: rgb(255, 255, 255);
     margin-left: 20px;
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 26px;
+    font-weight: 700;
     cursor: pointer;
 }
 .resource-info {
@@ -1169,5 +1151,12 @@ li {
 .search-box >>> .el-input__inner {
     background-color: rgba(0, 168, 255, 0.2);
     border: rgb(0, 228, 255);
+}
+.el-dropdown-link {
+    cursor: pointer;
+    color: #409eff;
+}
+.el-icon-caret-bottom {
+    font-size: 2px;
 }
 </style>

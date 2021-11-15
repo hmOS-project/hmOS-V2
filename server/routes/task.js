@@ -74,7 +74,7 @@ router.get('/getalltask', async (req, res) => {
 
 router.post('/getmytask', async (req, res) => {
 
-    var whereStr = { "userId": req.query.id };
+    var whereStr = { "userId": req.body.id };
     Task.find(whereStr, function (err, result) {
 
         if (err) {
@@ -147,7 +147,7 @@ router.post('/searchbydescription', async (req, res) => {
 router.post('/searchbyid', async (req, res) => {
 
     Task.find({
-        "_id": req.body.taskid,
+        "userId": req.body.userId,
     }, function (err, result) {
 
         if (err) {

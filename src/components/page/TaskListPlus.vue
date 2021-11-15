@@ -134,7 +134,7 @@ export default {
             taskList: [], //任务列表
             currentPage: 1, //默认显示第一页
             totalCount: 60, //数据总数
-            pageSize: 6, //每页显示数据条数
+            pageSize: 3, //每页显示数据条数
             radio: true,
             radio1: '1',
             radio2: '1',

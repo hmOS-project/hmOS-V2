@@ -307,7 +307,7 @@ export default {
                     let d = time.getDate();
                     let H = time.getHours();
                     let min = time.getMinutes();
-                    let myDate = y + '-' + m + '-' + d + '-' + H + ':' + min;
+                    let myDate = y + '-' + m + '-' + d + ' ' + H + ':' + min;
                     let data = {
                         taskName: input.taskName,
                         taskTimeRequire: input.taskTimeRequire,
@@ -455,8 +455,8 @@ export default {
                             }
                         })
                         .then((result) => {
-                            let  temp = result.name.split('/');
-                           // 上传成功返回值，可针对项目需求写其他逻辑
+                            let temp = result.name.split('/');
+                            // 上传成功返回值，可针对项目需求写其他逻辑
                             let data = {
                                 videoUrl: temp[1],
                                 taskId: that.taskId

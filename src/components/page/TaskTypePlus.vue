@@ -12,13 +12,14 @@
             <img src="../../assets/img/logo1.png" style="width: 60px; height: 50px; margin-left: 15px" />
         </div>
         <!--动效显示-->
+        <!-- <el-page-header @back="goBack" style="color: rgb(0, 228, 255)"></el-page-header> -->
         <el-row :gutter="18" style="margin: 30px 120px">
             <el-col :span="24">
                 <el-card
                     shadow="hover"
-                    style="height: 620px; padding: 5px; background-color: rgba(50,26, 50, 0.5); border: 0"
+                    style="height: 620px; padding: 5px; background-color: rgba(5, 53, 77, 0.7); border: 0"
                     :body-style="{ padding: '0px' }"
-                >
+                    >
                     <div class="header-box1">
                         <img src="../../assets/img/createtask.png" style="width: 45px; height: 45px" />
                         <span class="header-name">Creat Task</span>
@@ -27,7 +28,7 @@
                     <div id="app1">
                         <div class="tiles">
                             <div class="type1 tile" style="--color: #fdbbba" @click="gotoclassification()">
-                                <header style="font-size: 20px">Classification</header>
+                                <header style="font-size: 20px;">Classification</header>
                                 <div class="box-content">
                                     <div class="content">
                                         <h3 class="title">For example</h3>
@@ -101,8 +102,8 @@ export default {
         gotoIdentification() {
             this.$router.push('/identificationtaskplus');
         },
-        gotoclassification(){
-             this.$router.push('/classificationtask');
+        gotoclassification() {
+            this.$router.push('/classificationtask');
         }
     },
     mounted() {
